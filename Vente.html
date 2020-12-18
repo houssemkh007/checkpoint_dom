@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente en ligne</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    data-auto-a11y="true"
+  ></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</head>
+<body>
+   
+   <div id="cal" >
+    <h3 style="align-self: center; color:white;">Vente en ligne</h3><br>
+       <span id="tot"></span>
+       <br><br>
+       <br> <br>
+    <section id="Article1" class="art">
+    <button id="delete"name="delete" onclick="deleteSection('Article1')" >X</button>
+    <span id="heart1" onclick="setColor('heart1')"><i class="fas fa-heart"></i></span>
+    <label id="Article" >Article</label>
+    <img src="montre.jpg" class="img">
+    <label id="price1">100</label>
+    <button id="increm1"name="increment" onclick="plusArcticle('quantité1','price1','sum1');calculate('sum1','sum2','sum3','tot') " >+</button>
+    <input type="text" id="quantité1">
+    <button id="decrem1"name="decrement" onclick="MoinArcticle('quantité1','price1','sum1');calculate('sum1','sum2','sum3','tot')" >-</button>
+    <label id="sum1" class="deleted_value" ></label>
+    </section>
+    <section  id="Article2" class="art">
+        <button id="delete"name="delete" onclick="deleteSection('Article2')" >X</button> 
+        <span id="heart2" onclick="setColor('heart2')"><i class="fas fa-heart"></i></span>
+        <label id="Article" >Article</label>
+        <img src="montre.jpg" class="img">
+        <label id="price2">150</label>
+        <button id="increm2"name="increment" onclick="plusArcticle('quantité2','price2','sum2');calculate('sum1','sum2','sum3','tot')">+</button>
+        <input type="text" id="quantité2">
+        <button id="decrem2"name="decrement" onclick="MoinArcticle('quantité2','price2','sum2');calculate('sum1','sum2','sum3','tot')" >-</button>
+        <label id="sum2" class="deleted_value"></label>
+    </section>
+    <section class="art" id="Article3">
+        <button id="delete"name="delete" onclick="deleteSection('Article3')" >X</button> 
+        <span id="heart3" onclick="setColor('heart3')"><i class="fas fa-heart"></i></span>
+        <label id="Article" >Article</label>
+        <img src="montre.jpg" class="img">
+        <label id="price3">250</label>
+        <button id="increm3"name="increment" onclick="plusArcticle('quantité3','price3','sum3');calculate('sum1','sum2','sum3','tot') " >+</button>
+        <input type="text" id="quantité3">
+        <button id="decrem3"name="decrement" onclick="MoinArcticle('quantité3','price3','sum3');calculate('sum1','sum2','sum3','tot')" >-</button>
+        <label id="sum3" class="deleted_value"></label>
+    </section>
+</div>
+  
+    <script src="./Achat.js"></script>
+</body>
+</html>
